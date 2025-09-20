@@ -565,7 +565,7 @@ export default function ProdutoPage() {
                 {Object.entries(product.specifications).map(([key, value]) => (
                   <div key={key} className="flex justify-between items-center py-3 border-b border-gray-700 last:border-b-0">
                     <span className="text-gray-400 font-medium">{key}:</span>
-                    <span className="text-white">{value}</span>
+                    <span className="text-white">{String(value)}</span>
                   </div>
                 ))}
               </div>
